@@ -2,6 +2,36 @@
     DEBUG
 ------------------*/
 
+body{
+    height:100vh;
+}
+
+.debug .wrapper{
+    height: calc(100% - 100px);
+    display: flex;
+    
+}
+
+.debug header{
+    background-color: aquamarine;
+    width: 60px;
+    flex-shrink: 0;
+
+}
+
+.debug main{
+    flex-grow: 1;
+    background-color: chartreuse;
+    overflow-y: auto;
+}
+
+.debug footer{
+    background-color: purple;
+    height: 100px;
+}
+
+
+
 
 
 
@@ -25,7 +55,30 @@
     LAYOUT
 ------------------*/
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/*----------------
+    RESPONSIVE
+------------------*/
+
+/* Viewport da 639px a infinito */
+@media screen and (min-width: 639px) {
+    
+    
+}
+/*Viewport da 878px a infinito */
+@media screen and (min-width: 878px) {
+    
+
+}
+
+/* Viewport da 1440px a infinito */
+@media screen and (min-width: 1440px) {
+    
+
+}
+
