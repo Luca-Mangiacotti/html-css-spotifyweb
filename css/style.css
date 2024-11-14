@@ -2,38 +2,17 @@
     DEBUG
 ------------------*/
 
-body{
-    height:100vh;
-}
-
-.debug .wrapper{
-    height: calc(100% - 100px);
-    display: flex;
-    
-}
-
-.debug header{
+/* .debug header{
     background-color: aquamarine;
-    width: 60px;
-    flex-shrink: 0;
-
-}
+} */
 
 .debug main{
-    flex-grow: 1;
     background-color: chartreuse;
-    overflow-y: auto;
 }
 
 .debug footer{
     background-color: purple;
-    height: 100px;
 }
-
-
-
-
-
 
 /*----------------
     RESET
@@ -47,9 +26,25 @@ body{
 /*----------------
     COMMONS
 ------------------*/
+
 .img-fluid {
     max-width: 100%;
 }
+
+
+/*----------------
+    TIPOGRAPHY
+------------------*/
+
+header h5,
+header li{
+    color: #a3a3a3;
+    font-size: small;
+    }
+header h4{
+    color: white;
+}
+
 
 /*----------------
     LAYOUT
@@ -60,25 +55,173 @@ body{
     margin-right: auto;
 }
 
+body{
+    height:100vh;
+}
+
+.wrapper{
+    height: calc(100% - 100px);
+    display: flex;
+    
+}
+
+header{
+    width: 60px;
+    flex-shrink: 0;
+    padding: 20px 15px;
+    background-color: black;
+}
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+footer{
+    height: 100px;
+}
+
+ul{
+    list-style: none;
+}
+
+.head-top ul .img-fluid{
+    margin-bottom: 15px;
+}
+
+/*----------------
+    HEADER
+------------------*/
+.head-flex{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-big{
+    display: none;
+}
+
+.head-top h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.head-top li h5,
+.headbottom h5,
+.headbottom h4{
+    display: none;
+}
+
+.playlist,
+.head-bottom h5,
+.head-bottom h4{
+    display: none;
+}
+
+.playlist li p i{
+    font-size: 30px;
+}
+
+.img-half-width{
+    width: 50%;
+    margin-left: 7px;
+}
+
+hr{
+    margin: 10px 0px;
+    border: 1px solid #a3a3a3;
+}
+
+.img-profile{
+    border-radius: 100%;
+    background-color: #808080;
+}
+
+
+
+/*----------------
+    MAIN
+------------------*/
+
+
+/*----------------
+    FOOTER
+------------------*/
+
+footer{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
 
 /*----------------
     RESPONSIVE
 ------------------*/
 
-/* Viewport da 639px a infinito */
+/* Viewport "SMALL" da 639px a infinito */
 @media screen and (min-width: 639px) {
+
+    header{
+        width: 230px;
+    }
+
+    .logo-small{
+        display: none;
+    }
+
+    .logo-big{
+        display: block;
+        width: 50%;
+    }
+
+    .head-flex .head-top li img,
+    .head-flex .head-bottom .img-profile{
+        width: 10%;        
+    }
+
+    .head-top li h5,
+    .head-bottom h5,
+    .head-bottom h4{
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+
+    .playlist{
+        display: block;
+    }
     
+    .img-half-width{
+        margin-left: 0px;
+        width: 15px;
+    }
     
 }
-/*Viewport da 878px a infinito */
+/* Viewport "MEDIUM" da 878px a infinito */
 @media screen and (min-width: 878px) {
     
 
 }
 
-/* Viewport da 1440px a infinito */
+/* Viewport "LARGE" da 1440px a infinito */
 @media screen and (min-width: 1440px) {
     
+
+}
+
+/* Viewport "horizontal" da 350px a 0 */
+@media screen and (max-width: 1440px) {
+
+        
 
 }
 
