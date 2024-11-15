@@ -6,9 +6,9 @@
     background-color: aquamarine;
 } */
 
-.debug main{
+/* .debug main{
     background-color: chartreuse;
-}
+} */
 
 .debug footer{
     background-color: purple;
@@ -48,8 +48,10 @@ header h4{
     color: white;
 }
 
-span{
-    align-items: center;
+#category a{
+    color: #7d7f84;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
@@ -84,6 +86,7 @@ header{
 main{
     flex-grow: 1;
     overflow-y: auto;
+    background-color: #141922;
 }
 
 footer{
@@ -96,6 +99,10 @@ ul{
 
 .head-top ul .img-fluid{
     margin-bottom: 15px;
+}
+
+#category ul{
+    margin: 20px 0px;
 }
 
 /*----------------
@@ -208,7 +215,16 @@ hr{
     justify-content: flex-end;
 }
 
+#category ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
+#category li:hover{
+    border-bottom: 2px solid #adff2f;
+}
 
 /*----------------
     FOOTER
