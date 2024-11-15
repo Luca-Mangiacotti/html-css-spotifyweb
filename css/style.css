@@ -221,7 +221,7 @@ hr{
 }
 
 #category li{
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #category li:hover{
