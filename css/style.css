@@ -78,6 +78,7 @@ header{
     flex-shrink: 0;
     padding: 20px 15px;
     background-color: black;
+    overflow-y : auto;
 }
 
 main{
@@ -129,8 +130,25 @@ ul{
     display: none;
 }
 
-.playlist li p i{
+header li{
+    display: flex;
+    align-items: center;
+}
+
+.head-top .playlist ul{
+    height: 200px;
+    overflow-y:auto;
+}
+
+.playlist i{
     font-size: 30px;
+}
+
+.playlist h3{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
 }
 
 .img-half-width{
@@ -148,10 +166,7 @@ hr{
     background-color: #808080;
 }
 
-header li{
-    display: flex;
-    align-items: center;
-}
+
 
 /*----------------
     MAIN
@@ -179,7 +194,6 @@ footer{
 
     header{
         width: 230px;
-        overflow-y : hidden;
     }
 
     .logo-small{
