@@ -135,6 +135,11 @@ header li{
     align-items: center;
 }
 
+.head-top li:hover{
+    border-left: 2px solid #adff2f;
+    transition: 0,1s;
+}
+
 .head-top .playlist ul{
     height: 200px;
     overflow-y:auto;
