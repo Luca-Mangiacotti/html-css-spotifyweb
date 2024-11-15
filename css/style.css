@@ -41,8 +41,15 @@ header li{
     color: #a3a3a3;
     font-size: small;
     }
+    header h3{
+        color:#a3a3a3;
+    }
 header h4{
     color: white;
+}
+
+span{
+    align-items: center;
 }
 
 
@@ -115,6 +122,7 @@ ul{
     display: none;
 }
 
+
 .playlist,
 .head-bottom h5,
 .head-bottom h4{
@@ -140,7 +148,10 @@ hr{
     background-color: #808080;
 }
 
-
+header li{
+    display: flex;
+    align-items: center;
+}
 
 /*----------------
     MAIN
