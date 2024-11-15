@@ -168,6 +168,7 @@ footer{
 
     header{
         width: 230px;
+        overflow-y : hidden;
     }
 
     .logo-small{
