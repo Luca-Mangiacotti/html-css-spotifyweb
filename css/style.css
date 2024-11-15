@@ -172,6 +172,38 @@ hr{
     MAIN
 ------------------*/
 
+#main-head{
+    height: 90px;
+    background-color: #080b12;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.btn-main{
+    padding: 15px 40px;
+    border: 1px solid #ffffff;
+    background-color: #080b12;
+    border-radius: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+#main-head .btn-main:hover{
+    background-color: #a3a3a3;
+    transition: 0.5s;
+}
+
+.main-hcont{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
 
 /*----------------
     FOOTER
