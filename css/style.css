@@ -139,7 +139,7 @@ header li{
     align-items: center;
 }
 
-.head-top li:hover{
+.head-top #first-list li:hover{
     border-left: 2px solid #adff2f;
     transition: 0,1s;
 }
