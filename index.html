@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify web</title>
     <!-- INSERIMENTO GOOGLE FONTS -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- /GOOGLE FONTS -->
 
     <!-- INSERIMENTO FONT AWESOME -->
@@ -13,7 +15,7 @@
     <!-- /FONT AWESOME -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="debug">
+<body>
     <!-- AGGIUNTA CONTENITORE PER HEADER E MAIN -->
     <div class="wrapper">
         <!-- AGGIUNTA HEADER -->
@@ -208,20 +210,44 @@
                 </div>
                 
                 <!-- /TERZA RIGA 3 ALBUM -->
-
-             </section>
-            
+             </section>    
         </main>
         <!-- /MAIN -->
     </div>
     <!-- /CONTENITORE PER HEADER E MAIN -->
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="f-row">
+            <!-- AGGIUNTA PRIMA COLONNA FOOTER (DETTAGLI) -->
+            <div id="f-col1" class="f-col">
+                
+                <div class="f-col-int">
+                    <img class="img-ico" src="./img/sinister.jpeg" alt="">
+                    <div class="song-title">
+                        <h4>Sinister</h4>
+                        <p>subtitle</p> 
+                    </div>                   
+                </div>
+                <div class="f-col-int">
+                        <i class="fa-regular fa-heart"></i>
+                        <br>
+                        <i class="fa-regular fa-folder"></i>
+                </div>      
+            </div>
+            <!-- /PRIMA COLONNA FOOTER (DETTAGLI) -->
+            
+            <!-- AGGIUNTA SECONDA COLONNA FOOTER (PLAYER TIMELINE) -->
+            <div id="f-col2" class="f-col">cascascas Lorem 
 
+            </div>
+            <!-- /SECONDA COLONNA FOOTER (PLAYER TIMELINE) -->
 
+            <!-- AGGIUNTA TERZA COLONNA FOOTER (VOLUME)-->
+            <div id="f-col3" class="f-col">Lorem 
+
+            </div>
+            <!-- AGGIUNTA TERZA COLONNA FOOTER (VOLUME)-->
     </footer>
     <!-- /FOOTER -->
-
 </body>
 </html>

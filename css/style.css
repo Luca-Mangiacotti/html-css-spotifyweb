@@ -65,6 +65,14 @@ header h4{
     text-align: center;
 }
 
+footer p,
+footer i{
+    color: #7d7f84;
+}
+
+footer h4{
+    color: white;
+}
 
 /*----------------
     LAYOUT
@@ -308,9 +316,6 @@ hr{
     border-radius: 100%;
 }
 
-
-
-
 /*----------------
     FOOTER
 ------------------*/
@@ -320,7 +325,59 @@ footer{
     bottom: 0;
     left: 0;
     z-index: 10;
+    padding: 10px;
+    background-color: #282828;
 }
+
+.f-row{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+}
+
+.f-col{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+footer #f-col1,
+footer #f-col3{
+    width: 20%;
+}
+
+footer #f-col2{
+    width: 60%;
+}
+
+/* FOOTER COLUMN 1 */
+
+#f-col1{
+    justify-content: space-between;
+}
+
+#f-col1 .f-col-int:nth-child(1){
+    display: flex;
+    
+}
+
+#f-col1 .f-col-int:nth-child(1) img{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.song-title{
+    margin-left: 10px;
+}
+
+
+
+
+/* FOOTER COLUMN 2 */
+
+/* FOOTER COLUMN 3 */
+
 
 
 /*----------------
@@ -368,6 +425,11 @@ footer{
     .img-half-width{
         margin-left: 0px;
         width: 15px;
+    }
+
+    #f-col1 .f-col-int:nth-child(1) img{
+        width: 40px;
+        height: 40px;
     }
     
 }
