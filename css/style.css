@@ -151,8 +151,16 @@ header li{
 }
 
 .head-top #first-list li:hover{
-    border-left: 2px solid #adff2f;
+    color: white;
+    border-left: 1px solid #adff2f;
     transition: 0,1s;
+}
+
+.head-top #first-list li:hover h5,
+.head-top #first-list li:hover h3,
+.head-top .playlist li:hover,
+.head-bottom h5:hover{
+    color: white;
 }
 
 .head-top .playlist ul{
@@ -213,7 +221,8 @@ hr{
 
 #main-head .btn-main:hover{
     background-color: #a3a3a3;
-    transition: 0.5s;
+    transition: 0.3s;
+    font-size: 18px ;
 }
 
 /* SECTION 2 MAIN CATEGORY NAVIGATION */
@@ -238,8 +247,12 @@ hr{
 }
 
 #category li:hover{
-    margin-bottom: 18px;
-    border-bottom: 2px solid #adff2f;
+    text-decoration: underline #adff2f;
+    transition: 0,1s;
+}
+
+#category li:hover a{
+    color: white;
 }
 
 /* SECTION 3 ALBUM */
