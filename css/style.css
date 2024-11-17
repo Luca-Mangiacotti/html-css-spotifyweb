@@ -55,8 +55,9 @@ header h4{
     text-decoration: none;
 }
 
-#albums h2{
-    margin: 25px;
+main h2,
+main h3{
+    margin: 20px;
     color: #ffffff;
 }
 
@@ -66,13 +67,15 @@ header h4{
 }
 
 footer p,
-footer i{
+footer i,
+main p{
     color: #7d7f84;
 }
 
 footer h4,
 footer h5,
-footer #f-col2 i{
+footer #f-col2 i,
+footer #f-col3 i{
     color: white;
 }
 
@@ -391,15 +394,20 @@ footer #f-col2 i:nth-child(3){
     font-size: 35px;
 }
 
-footer hr{
+footer #f-col2 hr{
     width: 80%;
 }
-    
-
-
 
 /* FOOTER COLUMN 3 */
 
+footer #f-col3 hr{
+    width: 50%;
+}
+
+#f-col3{
+    justify-content: flex-end;
+    gap: 10px;
+}
 
 
 /*----------------
