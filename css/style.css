@@ -70,7 +70,9 @@ footer i{
     color: #7d7f84;
 }
 
-footer h4{
+footer h4,
+footer h5,
+footer #f-col2 i{
     color: white;
 }
 
@@ -371,10 +373,30 @@ footer #f-col2{
     margin-left: 10px;
 }
 
-
-
-
 /* FOOTER COLUMN 2 */
+
+#f-col2{
+    display: block;
+    margin: 5px 10px;
+}
+
+#f-col2 .f-row{
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+
+}
+
+footer #f-col2 i:nth-child(3){
+    font-size: 35px;
+}
+
+footer hr{
+    width: 80%;
+}
+    
+
+
 
 /* FOOTER COLUMN 3 */
 
