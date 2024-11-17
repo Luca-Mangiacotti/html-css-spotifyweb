@@ -252,18 +252,14 @@ hr{
 
 .col{
     width: calc((100% - 10px * 4) / 2);
-    margin-left: 0;
-    margin-right: 0;
     height: auto;
-    position: relative;
     margin: 10px;
 }
 
-.col .album-credits{
-    position: absolute;
-    z-index: 5;
-    width: 100%;
+.col .album-img{
+    position: relative;
 }
+
 
 .album-img .shadow{
     position: absolute;
