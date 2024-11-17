@@ -288,6 +288,12 @@ hr{
     display: block;
 }
 
+#circle-sec img,
+#circle-sec .shadow{
+    
+    border-radius: 100%;
+}
+
 
 
 
