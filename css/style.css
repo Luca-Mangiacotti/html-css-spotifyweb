@@ -427,6 +427,7 @@ footer #f-col2{
 
 footer #f-col2 i:nth-child(3){
     font-size: 30px;
+    margin-bottom: 5px;
 }
 
 footer #f-col2 .timeline-base{
@@ -444,10 +445,17 @@ footer #f-col2 .timeline-base .timeline-top{
     background-color: #c1c1c1 ;
 }
 
+.player-timeline{
+    margin-top: 5px;
+}
+
 #f-col2 .player-ico i:nth-child(3):hover{
 
     font-size: 35px;
+    margin-bottom: 0px;
 }
+
+
 
 /* FOOTER COLUMN 3 */
 
