@@ -10,9 +10,13 @@
     background-color: chartreuse;
 } */
 
-.debug footer{
+/* .debug footer{
     background-color: purple;
-}
+} */
+
+
+
+
 
 /*----------------
     RESET
@@ -22,6 +26,16 @@
     margin: 0;
     padding: 0;
 }
+
+/*-----------------
+    CUSTOM PROPERTIES
+--------------------*/
+:root{ 
+    
+    --primary-color: #ffffff;
+    --secondary-color: #a3a3a3;
+}
+
 
 /*----------------
     COMMONS
@@ -37,7 +51,7 @@
 
 header h5,
 header li{
-    color: #a3a3a3;
+    color: var(--secondary-color);
     font-size: small;
     }
 
@@ -46,11 +60,11 @@ header h3{
     }
 
 header h4{
-    color: white;
+    color: var(--primary-color);
 }
 
 #category a{
-    color: #7d7f84;
+    color: var(--secondary-color);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -58,7 +72,7 @@ header h4{
 main h2,
 main h3{
     margin: 20px;
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
 #albums h3,
@@ -69,14 +83,14 @@ main h3{
 footer p,
 footer i,
 main p{
-    color: #7d7f84;
+    color: var(--secondary-color);
 }
 
 footer h4,
 footer h5,
 footer #f-col2 i,
 footer #f-col3 i{
-    color: white;
+    color: var(--primary-color);
 }
 
 /*----------------
@@ -165,7 +179,7 @@ header li{
 }
 
 .head-top #first-list li:hover{
-    color: white;
+    color: var(--primary-color);
     border-left: 1px solid #adff2f;
     transition: color 0,1s;
 }
@@ -174,12 +188,13 @@ header li{
 .head-top #first-list li:hover h3,
 .head-top .playlist li:hover,
 .head-bottom h5:hover{
-    color: white;
+    color: var(--primary-color);
 }
 
 .head-top .playlist ul{
     height: 200px;
     overflow-y:auto;
+    
 }
 
 .playlist i{
@@ -228,7 +243,7 @@ hr{
     border: 1px solid #ffffff;
     background-color: #080b12;
     border-radius: 20px;
-    color: #ffffff;
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-right: 5px;
 }
@@ -259,13 +274,21 @@ hr{
     margin-bottom: 20px;
 }
 
+#category li:hover::after{
+    content: '';
+    height: 3px;
+    width: 30px;
+    margin: auto;
+    background-color: #adff2f;
+    display: block;
+}
+
 #category li:hover{
-    text-decoration: underline #adff2f;
-    transition: underline 0,1s;
+    margin-bottom: 17px;
 }
 
 #category li:hover a{
-    color: white;
+    color: var(--primary-color);
 }
 
 /* SECTION 3 ALBUM */
@@ -300,7 +323,7 @@ hr{
 
 .shadow i{
     font-size: 50px;
-    color: #ffffff;
+    color: var(--primary-color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -383,7 +406,7 @@ footer #f-col2{
 #f-col1 p:hover,
 #f-col1 i:hover{
 
-    color: white;
+    color: var(--primary-color);
 
 }
 
@@ -459,7 +482,7 @@ footer #f-col3 .volume-base .volume-top{
     height: 10px;
     width: 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--primary-color);
     position: absolute;
     right: 0;
     top: -2px;
