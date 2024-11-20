@@ -181,7 +181,7 @@ header li{
 .head-top #first-list li:hover{
     color: var(--primary-color);
     border-left: 1px solid #adff2f;
-    transition: color 0,1s;
+    transition: 0,5s;
 }
 
 .head-top #first-list li:hover h5,
